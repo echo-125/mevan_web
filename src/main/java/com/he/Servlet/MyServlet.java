@@ -12,7 +12,6 @@ import java.util.Date;
 public class MyServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("doGet");
-        request.getRequestDispatcher("index.jsp").forward(request,response);
         response.getWriter().println(new Date().toString());
     }
 
